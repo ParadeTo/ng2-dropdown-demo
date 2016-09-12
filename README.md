@@ -6,7 +6,7 @@
 * 子组件选择框发生变化后会通知父组件
 
 # 运行效果
-(https://github.com/ParadeTo/ng2-dropdown-demo/blob/master/imgs/demo.gif)
+![image](https://github.com/ParadeTo/ng2-dropdown-demo/blob/master/imgs/demo.gif)
 
 # 开始
 ```
