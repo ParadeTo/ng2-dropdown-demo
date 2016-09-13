@@ -7,7 +7,7 @@ import {MyDropDownComponent} from './dropdown/my-drop-down';
   directives: [MyDropDownComponent],
   template: `
   <div id='container'>
-    <my-drop-down-cmp [list]='list' [selectId]='list[0].id' (selectChange)='onChangeSelect($event)'></my-drop-down-cmp>
+    <my-drop-down-cmp [list]='list' [selectId]='list[0].id' (_selectChange)='onChangeSelect($event)'></my-drop-down-cmp>
     <p style='background-color:red;' *ngIf='selectId === 1'>香蕉、西瓜</p>
     <p style='background-color:green;' *ngIf='selectId === 2'>猴子、老虎</p>
   </div>
