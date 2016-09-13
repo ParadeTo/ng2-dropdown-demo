@@ -24,7 +24,7 @@ export class MyDropDownComponent {
 	// 父组件传递进来的参数
 	@Input('list') private list:any;
 	// 当改变了选择时给父组件发送事件
-	@Output('selectChange') private selectChange = new EventEmitter();
+	@Output('_selectChange') private _selectChange = new EventEmitter();
 	private text = '';
 	private id:any;
 
@@ -46,7 +46,7 @@ export class MyDropDownComponent {
 	public changeSelect(id: any,text: any,i: any) {
 		this.text = text;
 		this.id = id;
-		this.selectChange.emit({id:id,text:text,index:i})
+		this._selectChange.emit({id:id,text:text,index:i})
 	}
 
 }
